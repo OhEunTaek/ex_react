@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const getFlickr = async (opt) => {
-	const key = '3180857568184579a8145861c8f2822d';
+	const key = '58f441c44552cf38fca9e142fb8fb2aa';
 	const num = 100;
 	const extras = 'tags, description, views';
 	const method_search = 'flickr.photos.search';
@@ -25,8 +25,8 @@ export const getFlickr = async (opt) => {
 };
 
 export const getYoutube = async () => {
-	const key = 'AIzaSyDSdFyxbZ_BnbSiuPS3M6Ug9mM75LfRyJg';
-	const playList = 'PL_zwLMPR5YRLPV-Ni5MG2mds5p6RwupoD';
+	const key = 'AIzaSyBxnZ1kg_BJjZCcQrxHM4iiBdGWtEnUNgE';
+	const playList = 'PLR22mOC3bZYrZGYQCUZRVji058AAU034p';
 	const num = 10;
 	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playList}&maxResults=${num}`;
 
