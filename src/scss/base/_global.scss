@@ -1,28 +1,30 @@
-$nav-width: 260px;
+$nav-width: 300px;
 $subtitle-width: 300px;
-$main-padding: 60px;
+$main-padding: 100px;
 
-$blue: #03afff;
-$line-gray: #f2f3f4;
+$blue: #104bd4;
+$line-gray: #004e9b;
 
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
+// .visually-hidden {
+// 	position: absolute !important;
+// 	width: 1px !important;
+// 	height: 1px !important;
+// 	padding: 0 !important;
+// 	margin: -1px !important;
+// 	overflow: hidden !important;
+// 	clip: rect(0, 0, 0, 0) !important;
+// 	white-space: nowrap !important;
+// 	border: 0 !important;
+// }
 
 .badge-num {
-  font-weight: 600;
-  display: block;
-  background-color: rgba($color: $blue, $alpha: 0.85);
-  border: 1px solid $blue;
-  text-align: center;
-  border-radius: 100px;
-  padding: 3px 8px 2px;
+	font-weight: 600;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: rgba($color: $blue, $alpha: 0.55);
+	border: 1px solid $line-gray;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
 }
