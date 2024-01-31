@@ -3,8 +3,8 @@ import { useRef, useEffect, useState } from 'react'
 
 function Location() {
   const subtitle = {
-    title: 'Contact support',
-    p: 'For specific account or billing questions, security concerns, or answers not available on our help site, we’re happy to help.',
+    title: 'Delivery',
+    p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quo laboriosam obcaecati reprehenderit quaerat minus voluptas cupiditate, dolorem consectetur? Et nisi fugit dolor impedit modi eius aspernatur. Cum, reiciendis fugiat.',
   }
   const { kakao } = window
   const mapBox = useRef(null)
@@ -12,16 +12,16 @@ function Location() {
 
   const mapInfos = [
     {
-      title: 'Pangyoyeok',
-      address: '160, Pangyoyeok-ro, Bundang-gu, Seongnam-si, Gyeonggi-do',
-      phone: '+82 031-8018-7750',
-      latlng: new kakao.maps.LatLng(37.394776, 127.11116),
+      title: 'Hanok Street in Ikseon-dong',
+      address: 'Ikseon-dong, Jongno-gu, Seoul',
+      phone: '+82 02-1234-1234',
+      latlng: new kakao.maps.LatLng(37.5743484, 126.9897057),
     },
     {
-      title: 'Sinnonhyeon',
-      address: '102, Bongeunsa-ro, Gangnam-gu, Seoul, Republic of Korea',
-      phone: '+82 02-2656-0925',
-      latlng: new kakao.maps.LatLng(37.5037059, 127.0241346),
+      title: 'Seongsu-dong Cafe Street',
+      address: 'Seongsu-i-ro, Seongdong-gu, Seoul, Republic of Korea',
+      phone: '+82 02-1234-1234',
+      latlng: new kakao.maps.LatLng(37.5446148, 127.0580149),
     },
   ]
 
@@ -32,7 +32,7 @@ function Location() {
     level: 3,
   }
 
-  const imgSrc = process.env.PUBLIC_URL + '/img/trello-map-icon.svg'
+  const imgSrc = process.env.PUBLIC_URL + '/img/map-icon.svg'
   const imgSize = new kakao.maps.Size(30, 30)
   const imgOption = { offset: new kakao.maps.Point(15, 30) }
   const markerImage = new kakao.maps.MarkerImage(imgSrc, imgSize, imgOption)

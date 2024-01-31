@@ -67,24 +67,24 @@ function Gallery() {
             <span className="tags">
               {tags !== 0
                 ? Items[i].tags.split(' ').map((tag, i) => {
-                    if (i >= 10) return
+                  if (i >= 10) return
 
-                    return (
-                      <span
-                        key={i}
-                        className="tag"
-                        onClick={(e) => {
-                          setTag(e.target.innerText)
-                          setShow({
-                            type: 'search',
-                            tag: `${e.target.innerText}`,
-                          })
-                        }}
-                      >
-                        {tag}
-                      </span>
-                    )
-                  })
+                  return (
+                    <span
+                      key={i}
+                      className="tag"
+                      onClick={(e) => {
+                        setTag(e.target.innerText)
+                        setShow({
+                          type: 'search',
+                          tag: `${e.target.innerText}`,
+                        })
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  )
+                })
                 : ''}
             </span>
           </div>

@@ -49,20 +49,7 @@ function SubLayout({ name, sub, children }) {
               </button>
             </div>
 
-            <button className="btn-show" type="button">
-              <span>Atlassian Blog</span>
-            </button>
 
-            <button
-              className="btn-show"
-              type="button"
-              onClick={() => {
-                sub.show({ type: 'interest' })
-              }}
-            >
-              <span>Flickr interest</span>
-              <strong className="badge-num">{sub.flickr}</strong>
-            </button>
           </div>
         )}
       </div>
