@@ -1,5 +1,4 @@
 import Visual from './Visual'
-import News from './News'
 import People from './People'
 import Content from './Content'
 import Video from './Video'
@@ -12,7 +11,6 @@ function Main() {
         <Visual />
         <Content />
         <People />
-        <News />
         <Video />
         <Footer />
       </div>

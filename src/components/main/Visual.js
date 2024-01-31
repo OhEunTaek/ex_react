@@ -2,21 +2,19 @@ function Visual() {
   return (
     <section className="main-box visual">
       <h1>
-        Trello helps
+        Delivery
         <br />
-        teams move work <br />
-        forward.
+        wherever possible <br />
+        can do.
       </h1>
 
       <p>
-        Collaborate, manage projects, and reach new productivity peaks. From
-        high rises to the home office, the way your team works is
-        unique—accomplish it all with Trello.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempore dolor maxime. Nihil obcaecati corrupti vitae perferendis consequatur. Tenetur eligendi sit reiciendis! Facilis esse itaque assumenda ex nobis eligendi totam!
       </p>
 
       <figure>
         <video
-          src={process.env.PUBLIC_URL + '/img/video_main.mp4'}
+          src={process.env.PUBLIC_URL + '/img/wave.mp4'}
           loop
           muted
           autoPlay

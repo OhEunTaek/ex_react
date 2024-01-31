@@ -26,7 +26,7 @@ export const getFlickr = async (opt) => {
 
 export const getYoutube = async () => {
 	const key = 'AIzaSyBxnZ1kg_BJjZCcQrxHM4iiBdGWtEnUNgE';
-	const playList = 'PLR22mOC3bZYrZGYQCUZRVji058AAU034p';
+	const playList = 'PLR22mOC3bZYpkLFyPAySsd9OOyY9M4TFh';
 	const num = 10;
 	const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playList}&maxResults=${num}`;
 

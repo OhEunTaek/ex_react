@@ -13,8 +13,8 @@ function Video() {
     <section className="main-box video">
       <div className="inner">
         <div className="text">
-          <h1>Our product in action</h1>
-          <p>Explore all the ways Trello can power team productivity.</p>
+          <h1>new product explain</h1>
+          <p>Deliverys all the ways <br /> We can power team productivity.</p>
         </div>
 
         <Swiper
@@ -24,12 +24,12 @@ function Video() {
           scrollbar={true}
           navigation={true}
           slidesPerView={'auto'}
-          spaceBetween={30}
+          spaceBetween={10}
           modules={[Pagination, Navigation, Scrollbar]}
           className="swiper-video"
         >
           {Videos.map((item, i) => {
-            if (i >= 4) return
+            if (i >= 6) return
 
             return (
               <SwiperSlide key={i}>
@@ -45,13 +45,6 @@ function Video() {
                     <h3 className="title">{item.snippet.title}</h3>
                     <p>{item.snippet.description}</p>
                   </div>
-
-                  {/* <div className="thum-img">
-                    <img
-                      src={item.snippet.thumbnails.high.url}
-                      alt={item.snippet.title}
-                    />
-                  </div> */}
                 </article>
               </SwiperSlide>
             )
