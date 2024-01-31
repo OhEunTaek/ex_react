@@ -1,92 +1,92 @@
 .youtube {
-  .content {
-    display: flex;
-    flex-wrap: wrap;
+	.content {
+		display: flex;
+		flex-wrap: wrap;
 
-    article {
-      min-height: 260px;
-      max-width: 400px;
-      margin-bottom: 50px;
-      background-color: #fff;
-      transition: 0.3s;
+		article {
+			max-width: 420px;
 
-      &:hover {
-        cursor: pointer;
-        z-index: $youtube-card-level;
+			background-color: #e2f1f5;
+			transition: 0.3s;
+			padding: 10px;
 
-        .thum {
-          .icon {
-            .fa-youtube {
-              color: #ff0000;
-            }
-          }
-        }
+			&:hover {
+				cursor: pointer;
+				z-index: $youtube-card-level;
 
-        .desc {
-          .title {
-            text-decoration: underline;
-          }
-        }
-      }
+				.thum {
+					.icon {
+						.fa-youtube {
+							color: #ff0000;
+						}
+					}
+				}
 
-      .thum {
-        width: 100%;
-        position: relative;
+				.desc {
+					.title {
+						text-decoration: underline;
+					}
+				}
+			}
 
-        &::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.6);
-        }
+			.thum {
+				width: 100%;
+				position: relative;
 
-        .icon {
-          @include center-xy;
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0, 0, 0, 0.6);
+				}
 
-          .fa-youtube {
-            @include font(32px);
-            color: $blue;
-            transition: 0.2s;
-          }
-        }
+				.icon {
+					@include center-xy;
 
-        img {
-          @include object-fit;
-        }
-      }
+					.fa-youtube {
+						@include font(100px);
+						color: #fff;
+						transition: 0.2s;
+					}
+				}
 
-      .desc {
-        padding: 24px 32px 24px 24px;
+				img {
+					@include object-fit;
+				}
+			}
 
-        .owner {
-          @include font(12px);
-          display: inline-block;
-          margin-bottom: 16px;
-          font-weight: 300;
-        }
+			.desc {
+				padding: 24px 32px 0px 24px;
 
-        .title {
-          @include font(20px, 1.4);
-          @include line(2);
-          margin-bottom: 8px;
-          transition: 0.3s;
-        }
+				.owner {
+					@include font(12px);
+					display: inline-block;
+					margin-bottom: 16px;
+					font-weight: 900;
+				}
 
-        p {
-          @include font(14px, 1.6);
-          @include line(3);
-          margin-bottom: 40px;
-          font-weight: 200;
-        }
+				.title {
+					@include font(20px, 2);
+					@include line(1);
+					margin-bottom: 8px;
+					transition: 0.3s;
+				}
 
-        .time {
-          @include font(12px);
-          color: #777;
-        }
-      }
-    }
-  }
+				p {
+					@include font(12px, 1.4);
+					@include line(3);
+					margin-bottom: 40px;
+					font-weight: 200;
+				}
+
+				.time {
+					@include font(12px);
+					color: red;
+				}
+			}
+		}
+	}
 }

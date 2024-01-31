@@ -13,14 +13,11 @@ function Youtube() {
 	const Videos = useSelector((store) => store.youtubeReducer.youtube);
 
 	const subtitle = {
-		title: 'Trello Views',
-		p: 'Trusted by millions, Trello is the visual collaboration tool that creates a shared perspective on any project.',
+		title: 'Youtube in Delivery',
+		p: 'What does the Deliveroo look like on YouTube',
 		count: Videos.length,
 	};
 
-	useEffect(() => {
-		console.log(Videos);
-	}, []);
 
 	return (
 		<SubLayout name={'youtube'} sub={subtitle}>
