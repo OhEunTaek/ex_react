@@ -1,15 +1,11 @@
 import SubLayout from '../common/SubLayout'
-import { faClock } from '@fortawesome/free-solid-svg-icons'
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
-import { faXmarkSquare } from '@fortawesome/free-solid-svg-icons'
-import { faSquareCheck } from '@fortawesome/free-solid-svg-icons'
+import { faCircleCheck, faCircleXmark, faClock, faCommentSlash, faComments } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState, useRef, useEffect } from 'react'
 
 function Community() {
   const subtitle = {
-    title: 'Atlassian Community',
+    title: 'Delivery Community Board',
     p: 'Explore, discuss, and co-create the products and practices that will take you and your team to the next level with Atlassian Community.',
   }
 
@@ -56,7 +52,7 @@ function Community() {
       !inputTitle.current.value.trim() ||
       !inputContent.current.value.trim()
     ) {
-      return alert('내용을 입력하세요')
+      return alert('내용을 입력하지 않았습니다.')
     }
 
     setPosts([
@@ -87,7 +83,7 @@ function Community() {
   const updatePost = (i) => {
     if (!titleEdit.current.value.trim() || !contentEdit.current.value.trim()) {
       resetForm()
-      return alert('수정할 제목과 본문을 모두 입력하세요.')
+      return alert('수정할 title과 content 둘다 모두 입력하세요.')
     }
 
     Posts.map((post, index) => {
@@ -120,13 +116,13 @@ function Community() {
   }, [])
 
   return (
-    <SubLayout name="community" sub={subtitle}>
+    <SubLayout name="noticeboard" sub={subtitle}>
       <div className="board-input">
         <div className="board-input-top">
           <div className="title">
             <h1>
-              Send <br />
-              comments
+              Chat <br />
+              Comment
             </h1>
 
             <div className="today">
@@ -145,13 +141,13 @@ function Community() {
           <div className="input-item">
             <input
               type="text"
-              placeholder="title"
+              placeholder="TITLE HERE"
               name="Title"
               ref={inputTitle}
             />
             <textarea
               name="content"
-              placeholder="Content"
+              placeholder="WRITE COMMENTS"
               ref={inputContent}
             ></textarea>
           </div>
@@ -162,7 +158,7 @@ function Community() {
             Cancel
           </button>
           <button type="button" onClick={showForm}>
-            Registration
+            Chat
           </button>
         </div>
       </div>
@@ -195,7 +191,7 @@ function Community() {
                           cancelPost(i)
                         }}
                       >
-                        <FontAwesomeIcon icon={faXmarkSquare}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faCircleXmark}></FontAwesomeIcon>
                       </button>
 
                       <button
@@ -204,7 +200,7 @@ function Community() {
                           updatePost(i)
                         }}
                       >
-                        <FontAwesomeIcon icon={faSquareCheck}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faCircleCheck}></FontAwesomeIcon>
                       </button>
                     </div>
                   </div>
@@ -213,14 +209,14 @@ function Community() {
                     <h2>{post.title}</h2>
                     <p>{post.content}</p>
 
-                    <div className="btns-community-ouput">
+                    <div className="btns-community-output">
                       <button
                         type="button"
                         onClick={() => {
                           editPost(i)
                         }}
                       >
-                        <FontAwesomeIcon icon={faPenToSquare}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faComments}></FontAwesomeIcon>
                       </button>
 
                       <button
@@ -229,7 +225,7 @@ function Community() {
                           deletePost(i)
                         }}
                       >
-                        <FontAwesomeIcon icon={faTrashCan}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faCommentSlash}></FontAwesomeIcon>
                       </button>
                     </div>
                   </>

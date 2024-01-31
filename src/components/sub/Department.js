@@ -5,13 +5,13 @@ function Department() {
   const Members = useSelector((store) => store.memberReducer.members)
 
   const subtitle = {
-    title: 'About Trello',
-    p: 'What’s behind the boards.',
+    title: 'About Delivery',
+    p: 'Where you are!!',
     count: Members.length,
   }
 
   return (
-    <SubLayout name="department" sub={subtitle}>
+    <SubLayout name="organization" sub={subtitle}>
       {Members.map((member, i) => {
         return (
           <article key={i} className="member-item">
@@ -24,7 +24,7 @@ function Department() {
             <div className="member-info">
               <strong className="name">{member.name}</strong>
               <span className="position">{member.position}</span>
-              <p>{member.comment}</p>
+              <p>{member.comments}</p>
             </div>
           </article>
         )

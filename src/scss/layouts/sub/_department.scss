@@ -1,37 +1,38 @@
-.department {
-  .content {
-    display: flex;
-  }
+.organization {
+	.content {
+		display: flex;
+	}
 
-  .member-item {
-    .member-thum {
-      width: 400px;
-      height: 320px;
+	.member-item {
+		.member-thum {
+			width: 400px;
+			height: 520px;
 
-      img {
-        @include object-fit;
-      }
-    }
+			img {
+				@include object-fit;
+			}
+		}
 
-    .member-info {
-      padding: 32px;
+		.member-info {
+			padding-top: 32px;
+			padding-left: 32px;
 
-      .name {
-        @include font(16px);
-        display: block;
-      }
+			.name {
+				@include font(16px);
+				display: block;
+			}
 
-      .position {
-        display: inline-block;
-        @include font(12px);
-        color: #777;
-        margin-bottom: 32px;
-      }
+			.position {
+				display: inline-block;
+				@include font(12px);
+				color: #777;
+				margin-bottom: 32px;
+			}
 
-      p {
-        @include font(14px, 1.6);
-        font-weight: 300;
-      }
-    }
-  }
+			p {
+				@include font(14px, 1.6);
+				font-weight: 300;
+			}
+		}
+	}
 }

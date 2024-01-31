@@ -25,7 +25,7 @@ function People() {
             <div className="member-info">
               <span className="position">{member.position}</span>
               <strong className="name">{member.name}</strong>
-              <p>{member.comment}</p>
+              <p>{member.comments}</p>
             </div>
           </article>
         )
