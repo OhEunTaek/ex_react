@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
-import { faTrello } from '@fortawesome/free-brands-svg-icons'
-import { faApple } from '@fortawesome/free-brands-svg-icons'
-import { faGooglePlay } from '@fortawesome/free-brands-svg-icons'
+import { faTruckFast } from "@fortawesome/free-solid-svg-icons"
+import { faApplePay } from '@fortawesome/free-brands-svg-icons'
+import { faGooglePay } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Header() {
   return (
@@ -9,18 +9,18 @@ function Header() {
       <div className="inner">
         <h1 className="logo">
           <Link to="/">
-            <FontAwesomeIcon icon={faTrello} className="icon" />
-            <strong>Trello</strong>
+            <FontAwesomeIcon icon={faTruckFast} className='icon' />
+            <strong>Delivery</strong>
           </Link>
         </h1>
 
         <nav className="menu">
           <ul className="gnb">
             <li className="item">
-              <NavLink to="/department">Department</NavLink>
+              <NavLink to="/department">Organization</NavLink>
             </li>
             <li className="item">
-              <NavLink to="/community">Community</NavLink>
+              <NavLink to="/community">Noticeboard</NavLink>
             </li>
             <li className="item">
               <NavLink to="/gallery">Gallery</NavLink>
@@ -32,24 +32,20 @@ function Header() {
               <NavLink to="/location">Contact Us</NavLink>
             </li>
             <li className="item">
-              <NavLink to="/members">Join</NavLink>
+              <NavLink to="/members">Join Us</NavLink>
             </li>
           </ul>
 
-          <ul className="etc">
-            <li>Privacy Policy</li>
-            <li>Terms</li>
-            <li>Cookie Settings</li>
-          </ul>
+
 
           <div className="app">
-            <p>Trello also works great on your smaller screen.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maxime.</p>
             <div className="app-group">
               <Link to="/">
-                <FontAwesomeIcon icon={faApple} />
+                <FontAwesomeIcon icon={faApplePay} />
               </Link>
               <Link to="/">
-                <FontAwesomeIcon icon={faGooglePlay} />
+                <FontAwesomeIcon icon={faGooglePay} />
               </Link>
             </div>
           </div>
