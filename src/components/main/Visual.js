@@ -14,7 +14,7 @@ function Visual() {
 
       <figure>
         <video
-          src={process.env.PUBLIC_URL + '/img/wave.mp4'}
+          src={process.env.PUBLIC_URL + '/img/video_main.mp4'}
           loop
           muted
           autoPlay
