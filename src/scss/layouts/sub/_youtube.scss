@@ -2,10 +2,9 @@
 	.content {
 		display: flex;
 		flex-wrap: wrap;
-
+		width: 100%;
 		article {
-			max-width: 420px;
-
+			width: calc(100% / 3);
 			background-color: #e2f1f5;
 			transition: 0.3s;
 			padding: 10px;
